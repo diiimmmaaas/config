@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.renderImage {
+    width: 30%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.renderImage select {
+    width: 30vh;
+    text-align: center;
+}
+
+.renderImage p {
+    text-align: center;
+}
+
+.image-container img {
+    width: 360px;
+    height: 200px;
+    transition: 0.2s linear;
+}
+
+.image-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-container img:hover {
+    scale: 140%;
+}
+
+.firstImgContainer, .secondImgContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.fullingFildsText {
+    color: darkred;
+    margin: 20px 0 10px 0;
+}
+
+.inputTransformer, .voltageInput {
+    width: 30%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.inputTransformer p, .voltageInput p {
+    margin: 10px 0 10px 0;
+}
+
+.inputForm {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.inputForm input {
+    width: 120%;
+    height: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.bottomMargin {
+    margin-bottom: 40px;
+}
+
+.voltageInput {
+    text-align: center;
+}
+
+.lastQuestions {
+    margin-top: 20px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question10, .question11 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px black solid;
+    padding: 20px;
+    text-align: center;
+}
+
+.question10 p {
+    margin: 10px 0 10px 0;
+}
+
+input::placeholder {
+    text-align: center;
+}
+
+.activeImage {
+    border: 2px solid red;
+}

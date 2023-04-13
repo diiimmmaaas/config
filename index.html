@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Configurator</title>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+<!--  ^тест-->
+</head>
+<body>
+<div class="container">
+  <div class="renderImage">
+    <div class="question1">
+      <p>Мощность ТП</p>
+      <select name="power" id="power">
+        <option value="notChange">Не выбрано</option>
+        <option value="400">400кВА</option>
+        <option value="630">630кВА</option>
+        <option value="1000">1000кВА</option>
+        <option value="1250">1250кВА</option>
+        <option value="1600">1600кВА</option>
+        <option value="2000">2000кВА</option>
+        <option value="2500">2500кВА</option>
+      </select>
+    </div>
+
+    <div class="question2">
+      <p>Напряжение ВН/НН</p>
+      <select name="voltage" id="voltage">
+        <option value="notChange">Не выбрано</option>
+        <option value="6/04">6/0,4</option>
+        <option value="10/04">10/0,4</option>
+      </select>
+    </div>
+
+    <div class="question4">
+      <p>Ввод/вывод РУВН/РУНН</p>
+      <select name="enters" id="enters">
+        <option value="notChange">Не выбрано</option>
+        <option value="KK/KV">КК/КВ</option>
+        <option value="VK/VV">ВК/ВВ</option>
+      </select>
+    </div>
+    <p class="fullingFildsText">*все поля обязательны для заполнения</p>
+  </div>
+
+  <div class="image-container setDisplay5" style="display: none">
+    <div class="firstImgContainer">
+      <img src="#" alt="src" id="image1">
+      <img src="#" alt="src" id="image2">
+      <img src="#" alt="src" id="image3">
+    </div>
+    <div class="secondImgContainer">
+      <img src="#" alt="src" id="image4">
+      <img src="#" alt="src" id="image5">
+    </div>
+  </div>
+
+  <div class="inputTransformer" style="display: none">
+    <p>Мощность силового трансформатора</p>
+    <p class="fullingFildsText">*вводите цифрами</p>
+    <div class="inputForm">
+      <input placeholder="1000" type="number" id="transformer">
+      <p>кВА</p>
+    </div>
+  </div>
+
+  <div class="image-container setDisplay7" style="display: none">
+    <div class="firstImgContainer bottomMargin">
+      <img src="#" alt="src" id="image6">
+      <img src="#" alt="src" id="image7">
+      <img src="#" alt="src" id="image8">
+    </div>
+  </div>
+
+  <div class="voltageInput" style="display: none">
+    <p>Номинальный ток вводного коммутационного аппарата, А (если их два, то указать ток через запятую)</p>
+    <p class="fullingFildsText">*Например: 250А, 100А</p>
+    <input placeholder="250A" type="text" id="VInput">
+  </div>
+
+  <div class="voltageInput" style="display: none">
+    <p>Номинальный ток сецкионного коммутационного аппарата, А</p>
+    <p class="fullingFildsText">*Например: 250А</p>
+    <input placeholder="250A" type="text" id="VInput2">
+  </div>
+
+  <div class="image-container setDisplay9" style="display: none">
+    <div class="firstImgContainer bottomMargin">
+      <img src="#" alt="src" id="image9">
+      <img src="#" alt="src" id="image10">
+      <img src="#" alt="src" id="image11">
+    </div>
+  </div>
+
+  <div class="lastQuestions" style="display: none">
+    <div class="question10">
+      <p>Номинальный ток коммутационных аппаратов на отходящих линиях для 1й секциии, А (указать через тире: количество-ток)</p>
+      <p class="fullingFildsText">*Например: 2 - 250А; 1 - 150А; 1 - 100А</p>
+      <input placeholder="2 - 250A" id="question10Input"/>
+    </div>
+
+      <div class="question10">
+        <p>Номинальный ток коммутационных аппаратов на отходящих линиях для 2й секциии, А (указать через тире: количество-ток)</p>
+        <p class="fullingFildsText">*Например: 2 - 250А; 1 - 150А; 1 - 100А</p>
+        <input placeholder="2 - 250A" id="question13Input"/>
+      </div>
+
+    <div class="question11">
+      <p>Особые требования/пожелания</p>
+      <input id="question11Input"/>
+    </div>
+
+    <input type="submit" id="js_send" value="Send" />
+  </div>
+
+</div>
+
+<form style="display: none" id="testForm">
+  <p id="answer1"></p>
+  <p id="answer2"></p>
+  <p id="answer3"></p>
+  <p id="answer4"></p>
+
+  <p id="answer5"></p>
+  <p id="answer6"></p>
+  <p id="answer7"></p>
+  <p id="answer8"></p>
+
+  <p id="answer9"></p>
+  <p id="answer10"></p>
+  <p id="answer11"></p>
+  <p id="answer12"></p>
+</form>
+<script src="script.js"></script>
+</body>
+</html>
